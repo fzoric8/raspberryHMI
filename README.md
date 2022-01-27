@@ -49,7 +49,13 @@ To run rosserial run this command with correct baud rate.
 rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=57600
 ```
 
+
 ## TODO: 
 
+
+#### HP
+- [ ] Create launch file
 - [ ] Convert Int8List to joy msg
-- [ ] Test it on GPIO UART
+#### LP
+- [ ] Test on GPIO Raspberry UART
+- [ ] Create casing 
