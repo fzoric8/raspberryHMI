@@ -68,6 +68,8 @@ gst-launch-1.0 -v rtspsrc location=rtsp://hmi-server:8554/full drop-on-latency=t
 
 #### [Gstreamer tutorials](https://gstreamer.freedesktop.org/documentation/tutorials/basic/hello-world.html?gi-language=c#) 
 
+#### [Gstreamer arguments for launch](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good/html/gst-plugins-good-plugins-rtpjitterbuffer.html)
+
 ## TODO: 
 
 
