@@ -75,6 +75,10 @@ python3 examples/pipeline_with_parse_launch.py -p "rtspsrc location=rtsp://hmi-s
 
 #### [Gstreamer tutorials](https://gstreamer.freedesktop.org/documentation/tutorials/basic/hello-world.html?gi-language=c#) 
 
+#### [Gstreamer arguments for launch](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-good/html/gst-plugins-good-plugins-rtpjitterbuffer.html)
+
+## [Webcam used](https://www.logitech.com/en-roeu/products/webcams/c270-hd-webcam.960-001063.html) 
+
 ## TODO: 
 
 
