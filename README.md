@@ -62,6 +62,8 @@ Should be enough for RTSP!
 ## RTSP 
 
 Very good streaming preformance has been reached by using gst streamer and following command: 
+
+### Currently best, just have to use smaller framerate on server side (10)
 ```
 gst-launch-1.0 -v rtspsrc location=rtsp://hmi-server:8554/full drop-on-latency=true use-pipeline-clock=true do-retransmission=false latency=0 protocols=GST_RTSP_LOWER_TRANS_UDP ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink sync=false
 ```
