@@ -66,6 +66,12 @@ Very good streaming preformance has been reached by using gst streamer and follo
 gst-launch-1.0 -v rtspsrc location=rtsp://hmi-server:8554/full drop-on-latency=true use-pipeline-clock=true do-retransmission=false latency=0 protocols=GST_RTSP_LOWER_TRANS_UDP ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink sync=false
 ```
 
+Better GStreamer config (smaller UDP buffer): 
+```
+gst-launch-1.0 rtspsrc location=rtsp://hmi-server:8554/full drop-on-latency=true use-pipeline-clock=true do-retransmission=false latency=50 udp-buffer-size=10000 protocols=GST_RTSP_LOWER_TRANS_UDP ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink sync=false
+```
+
+
 Very promising no lagging python-gstreamer fast to run: 
 ```
 python3 examples/pipeline_with_parse_launch.py -p "rtspsrc location=rtsp://hmi-server:8554/full drop-on-latency=false use-pipeline-clock=true do-retransmission=false latency=10 protocols=GST_RTSP_LOWER_TRANS_UDP ! rtph264depay ! h264parse ! avdec_h264 ! autovideosink sync=false"
